@@ -172,5 +172,47 @@ startGame.addEventListener('click', function () {
 
     // Adding apple
     generateApples()
+})
+
+// logic for buttons
+const up = document.querySelector('.up')
+const down = document.querySelector('.down')
+const left = document.querySelector('.left')
+const right = document.querySelector('.right')
+
+up.addEventListener('click', function (e) {
+    up.classList.add("animate-bounce")
+    direction = -width
+
+    setTimeout(() => {
+        up.classList.remove("animate-bounce")
+    }, 100);
+})
+
+down.addEventListener('click', function (e) {
+    down.classList.add("animate-bounce")
+    direction = width
+
+    setTimeout(() => {
+        down.classList.remove("animate-bounce")
+    }, 100);
+})
+
+left.addEventListener('click', function (e) {
+    left.classList.add("animate-bounce")
+    direction = -1
+
+    setTimeout(() => {
+        left.classList.remove("animate-bounce")
+    }, 100);
+})
+
+right.addEventListener('click', function (e) {
+    right.classList.add("animate-bounce")
+    direction = 1
+
+    setTimeout(() => {
+        right.classList.remove("animate-bounce")
+    }, 100);
 
 })
