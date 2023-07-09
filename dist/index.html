@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+
+    <link rel="icon"
+        href="https://www.iconarchive.com/download/i107386/google/noto-emoji-animals-nature/22285-snake.ico"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="output.css">
+    <script type="module" src="index.js"></script>
+</head>
+
+<style>
+    /* This is for the path where "snake crawl" */
+    .path div {
+        height: 19px;
+        width: 19px;
+        /* background-color: rgb(84, 84, 156); */
+    }
+
+    /* Styling to the Snake */
+    .snake {
+        background-color: yellowgreen;
+        border-radius: 12px;
+    }
+
+    /* Styling apple */
+    .apple {
+        background-color: chocolate;
+        border-radius: 2px;
+    }
+</style>
+
+<body class="bg-white flex flex-col items-center justify-center">
+
+    <!-- Heading -->
+    <p class="bg-white rounded-md shadow-md mt-20 text-5xl font-mono border border-gray-300 shadow-green-400 px-4 py-2">
+        Snake Game</p>
+
+    <!-- Start or Reset the Game -->
+    <button class="mt-10 bg-cyan-400 px-3 py-2 text-xl font-mono rounded-md shadow-md shadow-cyan-600" id="start">Start
+        / Reset</button>
+
+    <!-- Score Board -->
+    <p class="mt-10 text-2xl font-mono">Score: <span id="score">0</span></p>
+
+    <!-- Snake Path -->
+    <div class="path flex flex-wrap aspect-square h-[205px] w-[206px] border-8 mt-10 border-red-600">
+
+    </div>
+</body>
+
+</html>
